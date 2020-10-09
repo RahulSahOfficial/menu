@@ -16,9 +16,9 @@ footer
 }
 footer p
 {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
     cursor: pointer;
-    font-weight: 400;
+    font-weight: 300;
     margin-bottom: 0;
 }
 #topline
@@ -168,11 +168,18 @@ button:hover
 @media only screen and (max-width: 500px) {
 	#topline
 	{
-		left: 40%;
+		left: 43%;
+		font-size: 1.5rem;
+	}
+	#topline span
+	{
+		font-size: 0.8rem;
 	}
 	button
 	{
-		width: 15rem;
+		width: 16rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
 	}
 	.eachbox
 	{
@@ -181,6 +188,20 @@ button:hover
 	}
 	.innerbox {
     margin: 1rem 1rem 5rem;
+}
+.buttonbox
+{
+	padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+#round{
+	height: 2rem;
+}
+#github a img {
+    height: 3rem;
+}
+#insta a img {
+    height: 3rem;
 }
 }
 
