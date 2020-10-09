@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>📚Menu | Developer Sah</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+  /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="innerbox">
+		<h1 class="alert alert-primary" id="topline">📚 <img id="round" class="animate__animated animate__rotateIn" src="https://img.icons8.com/fluent/48/000000/github.png"/> MENU <span>(Developer Sah) </span></h1>
+	
+	<div class="buttonbox">
+		<div class="eachbox">
+			<h3>Problem Solving</h3>
+			<a href="https://rahulsahofficial.github.io/truthtablegenerator/" target="_blank"><button class="ps">📋 Truth Table Generator</button></a>
+			<a href="https://rahulsahofficial.github.io/rankofword/" target="_blank"><button class="ps">🏆 Rank Of Word</button></a>
+		</div>
+
+		<div class="eachbox">
+			<h3>Browser Game</h3>
+			<a href="https://rahulsahofficial.github.io/memorygame/" target="_blank"><button class="game">🃏 Memory Game</button></a>
+			<a href="https://rahulsahofficial.github.io/drum/" target="_blank"><button class="game">🥁 Drum</button></a>
+			<a href="https://rahulsahofficial.github.io/dice/" target="_blank"><button class="game">🏆 Dice</button></a>
+
+		</div>
+
+		<div class="eachbox">
+			<h3>Frontend Mentor Design</h3>
+			<a href="https://rahulsahofficial.github.io/project1/" target="_blank"><button class="project">📕 4 Card Feature</button></a>
+			<a href="https://rahulsahofficial.github.io/project2/" target="_blank"><button class="project">📕 Base Apparel</button></a>
+			<a href="https://rahulsahofficial.github.io/project3/" target="_blank"><button class="project">📕 Single Price Grid</button></a>
+
+		</div>
+
+
+		<div class="eachbox">
+			<h3>Website Practice</h3>
+			<a href="https://rahulsahofficial.github.io/tindog/" target="_blank"><button class="practice">🐶 Tindog Website</button></a>
+			<a href="https://rahulsahofficial.github.io/best/" target="_blank"><button class="practice">👨 Creative Profile</button></a>
+
+		</div>
+		<!-- <div class="cta"> -->
+		<div id="github" title="Connect on Github" class="github cta animate__animated animate__backInDown"><a href="https://github.com/RahulSahOfficial" target="_blank"><img src="https://img.icons8.com/fluent/96/000000/github.png"/></a></div>
+		<div id="insta" title="Connect on instagram" class="insta cta animate__animated animate__backInDown"><a href="https://www.instagram.com/developer_sah/" target="_blank"><img src="https://img.icons8.com/fluent/144/000000/instagram-new.png"/></a></div>
+		<!-- </div> -->
+
+	</div>
+	</div>
+	<footer>
+		<p>© Copyright 2020   |   Created By Rahul Sah <img class="flag" src="https://img.icons8.com/color/48/000000/india-circular.png"/></p>
+	</footer>
+	<script>
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#github").show();
+			},500)
+			setTimeout(function(){
+				$("#insta").show();
+			},1000)
+
+			setTimeout(function(){
+				$("#github").removeClass("animate__backInDown")
+				setInterval(function()
+				{
+					$("#github").removeClass("animate__shakeX");
+					setTimeout(function(){
+						$("#github").addClass("animate__shakeX")
+					},100)
+					;
+				},5000)
+
+
+				setInterval(function()
+				{
+					$("#round").removeClass("animate__rotateIn");
+					setTimeout(function(){
+						$("#round").addClass("animate__rotateIn")
+					},100)
+					;
+				},3000)
+
+
+			},1500)
+		})
+
+	</script>
+</body>
+</html>
