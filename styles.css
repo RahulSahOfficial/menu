@@ -23,6 +23,7 @@ footer p
 }
 #topline
 {
+	z-index:10;
 	text-align: center;
     position: fixed;
     top: 0;
